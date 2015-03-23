@@ -14,7 +14,7 @@
 	<!-- render is embedded ruby that refers to the partial _header.html.erb, which is the bootstrap header -->
 	<div class="container">
 		<% flash.each do  |name, msg| %>
-			<%= content_tag(:div, msg, lass: "alert alert-#{name}") %>
+			<%= content_tag(:div, msg, class: "alert alert-info") %>
 		<% end %>
 		<%= yield %>
 	</div>	
