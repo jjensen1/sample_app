@@ -15,6 +15,7 @@
 	<div class="container">
 		<% flash.each do  |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert alert-info") %>
+		<!-- the "info" part in the "alert alert-info" changes the flash alert message "you are already signed in" to a blue color, allegedly. -->	
 		<% end %>
 		<%= yield %>
 	</div>	
